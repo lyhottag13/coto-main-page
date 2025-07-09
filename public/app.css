@@ -1,10 +1,31 @@
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 50px;
+    text-align: center;
+    background-color: antiquewhite;
 }
-.api-panel {
-    width: 80%;
+
+img {
     border-radius: 20px;
-    background-color: black;
+    border-bottom: solid black 5px;
+    border-right: solid black 5px;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+img:hover {
+    scale: 1.1;
+    rotate: 5deg;    
+    box-shadow: 0 0 20px black;
+}
+
+h1 {
+    background-color: rgb(203, 31, 31);
     color: white;
+    width: 100%;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#holder {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
