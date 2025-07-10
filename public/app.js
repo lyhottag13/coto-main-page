@@ -2,7 +2,7 @@ const holder = document.getElementById('holder');
 const header = document.querySelector('h1');
 
 const imageNames = ['Captura', 'Pareto Visualizer', 'Sistema420'];
-const links = ['https://qa1-captura.local', 'https://qa1-pareto.local', 'https://sistema420.local'];
+const links = ['https://qa1-captura.local', 'https://qa1-pareto.local', 'https://sys420.local'];
 
 const images = [];
 
