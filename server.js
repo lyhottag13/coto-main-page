@@ -19,9 +19,3 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'app.html'));
 });
-
-app.get('/api/connection', async (req, res) => {
-    const response = await fetch('https://bored-api.appbrewery.com/random');
-    const data = await response.json();
-    res.send(data);
-});

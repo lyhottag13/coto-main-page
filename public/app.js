@@ -2,7 +2,7 @@ const holder = document.getElementById('holder');
 const header = document.querySelector('h1');
 
 const imageNames = ['Captura', 'Pareto Visualizer', 'Sistema420'];
-const links = ['https://youtube.com', 'https://amazon.com', 'https://roblox.com'];
+const links = ['https://qa1-captura.local', 'https://qa1-pareto.local', 'https://sistema420.local'];
 
 const images = [];
 
@@ -28,7 +28,7 @@ function createPanel(image) {
 
     const newImage = document.createElement('img');
     newImage.src = image.image.src;
-    newImage.style.height = '200px';
+    newImage.style.width = `${window.innerWidth / 3 - 30}px`;
 
     newPanel.appendChild(newImage);
     holder.appendChild(newPanel);
