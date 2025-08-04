@@ -1,9 +1,20 @@
 const holder = document.getElementById('holder');
 const header = document.querySelector('h1');
 
-const imageNames = ['Captura', 'Pareto Visualizer', 'Sistema420'];
-const links = ['https://qa1-captura.local', 'https://qa1-pareto.local', 'https://sys420.local'];
-
+const imageNames = [
+    'Captura', 
+    'Pareto Visualizer', 
+    'Sistema420', 
+    'RegisterApp', 
+    'BarTender'
+];
+const links = [
+    'http://qa1-captura.local',
+    'http://qa1-pareto.local',
+    'http://sys420.local',
+    'http://register.local',
+    'http://bartender.local'
+];
 const images = [];
 
 
@@ -16,7 +27,7 @@ async function main() {
         images[index].link = links[index];
     });
     images.forEach(image => {
-        createPanel(image, 'https://google.com');
+        createPanel(image);
     })
     startClock();
 }
@@ -33,6 +44,7 @@ function createPanel(image) {
     newPanel.appendChild(newImage);
     holder.appendChild(newPanel);
 }
+
 function startClock() {
     header.innerText += ` - ${(new Date().toLocaleString())}`;
     setInterval(() => {
